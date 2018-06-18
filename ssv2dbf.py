@@ -98,7 +98,7 @@ if __name__ == "__main__":
     feeder_file.close()
 
     table = dbf.Table(database)
-    table.open()
+    table.open(mode=dbf.READ_WRITE)
 
 
     #print "parts:"
