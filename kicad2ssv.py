@@ -14,7 +14,7 @@ for line in in_file:
     l = line.split(",")
     if len(l) == 7 and l[0][0] != '#':
         name, value, package, x, y, c, side  = l
-        out_file.write(name.replace(" ", "_") + " " + value.replace(" ", "_") + " " + package.replace(" ", "_") + " " + x + " " + y + " " + c + " " + side)
+        out_file.write(name.replace(" ", "_").replace('"', '') + " " + value.replace(" ", "_").replace('"', '') + " " + package.replace(" ", "_").replace('"', '') + " " + x + " " + y + " " + c + " " + side)
 
 
 in_file.close()

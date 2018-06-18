@@ -82,7 +82,7 @@ if __name__ == "__main__":
     dir_name = os.path.dirname(sys.argv[0])
     if dir_name == "":
         dir_name = "."
-    shutil.copyfile(dir_name + '/template.dbf',database)
+    shutil.copyfile(dir_name + '/template.DBF',database)
 
     board = open(sys.argv[1])
     feeder_file = open(sys.argv[2])
